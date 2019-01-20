@@ -1,0 +1,44 @@
+package machine;
+import java.util.Scanner;
+public class Calculator {
+	
+	public static void main(String[] args) {
+		int a  ;
+		int b;
+		int c ;
+int d;
+	Boolean anymorenumbers;
+String operator1= "+ - * /"; 
+String operator2;
+		Scanner input = new Scanner(System.in);
+ 		
+		System.out.println("enter your first number"); 
+		a = input.nextInt(); 
+		System.out.println("any more numbers");
+		anymorenumbers = input.nextBoolean();
+		if(anymorenumbers==true) {
+			System.out.println("enter your second number");
+	         b = input.nextInt();              	    
+	         System.out.println("enter your operator");
+	         operator1=input.next();
+	         System.out.println("any more numbers");
+	 		anymorenumbers = input.nextBoolean();
+	 		if(anymorenumbers==false) {
+             if(operator1.equals("+")){
+            	 System.out.println(a+b);
+             } if(operator1.equals("-")){
+            	 System.out.println(a-b);
+             }      if(operator1.equals("*")){
+            	 System.out.println(a*b);
+            		 }     
+             if(operator1.equals("/")){
+            	 System.out.println(a/b);
+             }    
+	 		}
+		if(anymorenumbers==true) {
+			System.out.println("enter your third number");
+	c = input.nextInt();
+System.out.println("enter your second operator");
+operator2 = input.next();
+
+		}}}}
